@@ -1,0 +1,26 @@
+﻿<Window x:Class="TheFinalDAW.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:TheFinalDAW"
+    mc:Ignorable="d"
+    SizeChanged="Window_SizeChanged"
+    Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+    Title="MainWindow" Height="350" Width="569">
+    <DockPanel LastChildFill="True">
+        <Grid DockPanel.Dock="Top" Height="50" Background="LightGray">
+            <Label>
+                <Button x:Name="button" Content="Button" Width="75" Click="button_Click"/>
+            </Label>
+        </Grid>
+        <Grid DockPanel.Dock="Bottom" Height="50" Background="LightGray">
+            <Label Content="Bottom"/>
+        </Grid>
+        <Grid DockPanel.Dock="Left" Width="150" Background="DarkGray">
+            <Label Content="Left"/>
+        </Grid>
+        <Canvas Name="CenterCanvas">
+        </Canvas>
+    </DockPanel>
+</Window>
