@@ -15,7 +15,8 @@ namespace TheFinalDAW.Configuration
         public Pen InsertionPointPen = new Pen(new SolidColorBrush(Color.FromRgb(150, 0, 0)), 1);
         public SolidColorBrush InsertionPointBackgroundBrush = new SolidColorBrush(Color.FromRgb(0, 0, 0));
 
-        public static AppConfiguration Instance = new AppConfiguration();
+        private static AppConfiguration instance = new AppConfiguration();
+        public static AppConfiguration Instance => instance;
 
         private AppConfiguration()
         {

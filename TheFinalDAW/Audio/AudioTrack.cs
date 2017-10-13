@@ -10,7 +10,7 @@ namespace TheFinalDAW.Audio
     {
         public string Name { get; set; }
 
-        public List<AudibleReference> Audio { get; set; }
+        public List<AudibleReference> AudioRefs { get; set; }
 
         public List<IEffect> Effects { get; set; }
 
